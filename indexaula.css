@@ -1,0 +1,198 @@
+ /* ==========================================
+           1. CONFIGURAÇÕES GERAIS (RESET)
+           ========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f3f9; /* Fundo claro e suave para contraste */
+            color: #3d1d5a; /* Roxo escuro para excelente legibilidade */
+            line-height: 1.6;
+        }
+
+        /* ==========================================
+           2. HEADER (CABEÇALHO)
+           ========================================== */
+        header {
+            background: linear-gradient(135deg, #e22b86, #8a2be2); /* Gradiente moderno */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        /* Container da Imagem de Felicidade */
+        header div {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        header div p {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        header img {
+            max-width: 150px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Link do YouTube no Header */
+        header a {
+            display: inline-block;
+            background-color: white;
+            color: #e22b86;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease; /* Efeito suave */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header a:hover {
+            background-color: #f7f3f9;
+            transform: translateY(-3px); /* Flutua levemente ao passar o mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ==========================================
+           3. MAIN (CONTEÚDO PRINCIPAL)
+           ========================================== */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seção de Introdução da Turma */
+        main > div {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        main h2 {
+            color: #e22b86;
+            margin-bottom: 10px;
+        }
+
+        /* Seção das Ações */
+        section {
+            background-color: #fff0fa; /* Rosa bem clarinho para a seção */
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            color: #8a2be2;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        /* Distribuição dos Cards com Flexbox */
+        section ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        section ul li {
+            flex: 1 1 calc(33.333% - 20px); /* 3 colunas em telas grandes */
+            min-width: 280px; /* Não deixa esmagar em telas menores */
+        }
+
+        /* ==========================================
+           4. CARD COMPONENT
+           ========================================== */
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 5px solid #8a2be2; /* Detalhe colorido na lateral */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de hover no Card */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
+            border-left-color: #e22b86; /* Muda a cor do detalhe no hover */
+        }
+
+        .card h4 {
+            font-size: 1.3rem;
+            color: #3d1d5a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Garante alinhamento dos botões */
+        }
+
+        /* Botão Saiba Mais dentro do Card */
+        .card a {
+            display: inline-block;
+            text-align: center;
+            background-color: #8a2be2;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .card a:hover {
+            background-color: #e22b86;
+        }
+
+        /* ==========================================
+           5. FOOTER (RODAPÉ)
+           ========================================== */
+        footer {
+            background-color: #3d1d5a; /* Roxo bem escuro para fechar o layout */
+            color: #fff0fa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
